@@ -14,4 +14,4 @@ def isPrimeSmart(n):
 
 
 print(isPrime(1))
-print(isPrimeSmart(2))
+print(isPrimeSmart(13))
