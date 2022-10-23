@@ -30,7 +30,7 @@ void primeFact(int n){
 }
 int main()
 {
-    primeFact(13);
+    primeFact(1333860);
     for(int i = 1; i <= len; i++){
         cout << f[i] << " " << expo[i] << "\n";
     }
