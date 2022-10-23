@@ -35,7 +35,7 @@ return true
 
 Definition: Prime factorization is dividing a number by prime number multiple times to return 1
 
-Approach:
+Basic Approach: Time Complexity O(n)
 ```
 global f = [], expo = [], len
 function primeFact(n):
@@ -50,5 +50,27 @@ function primeFact(n):
             f[len] = d
             expo[len] = k
         d++
+    
+```
+Smart Approach: Time Complexity O(sqrt(n))
+
+```
+global f = [], expo = [], len
+function primeFact(n):
+    d = 2
+    while n > 1 && d*d <=n:
+        k = 0
+        while n % d == 0:
+            n = n/d
+            k++ 
+        if k > 0:
+            len++
+            f[len] = d
+            expo[len] = k
+        d++
+
+    if n > 1:
+    len++
+    f[len] = n
     
 ```
