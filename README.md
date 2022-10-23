@@ -31,3 +31,24 @@ for i in range [2, sqrt(n)]:
 
 return true
 ```
+## Prime Factorization
+
+Definition: Prime factorization is dividing a number by prime number multiple times to return 1
+
+Approach:
+```
+global f = [], expo = [], len
+function primeFact(n):
+    d = 2
+    while n > 1:
+        k = 0
+        while n % d == 0:
+            n = n/d
+            k++
+        if k > 0:
+            len++
+            f[len] = d
+            expo[len] = k
+        d++
+    
+```
