@@ -90,5 +90,6 @@ func sieveofEratosthenes(int Limit):
     for(int i = 2, i <=limit/2, i++):
         if(isPrime[i]):
             for(j = i * 2, j <=limit, j += i):
-                isPrime[j] = False 
+                isPrime[j] = False  
 ```
+Time Complexity - O(limit * log(limit))
