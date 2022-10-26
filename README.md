@@ -119,5 +119,29 @@ In our problem, `n` is pigeons and `remainder` are holes
 
 ![pigeon_hole](pigeon_hole.png)
 
+Algorithm:
+```
+global int fr[Nmax]
+func findNumber(int n){
+    int cur_remainder = 0;
+    for(int i = i, i <=n, i++){
+        cure_remainder = (cur_remainder*10 + 1) % n;
+        if cur_remainder == 0{
+            for(int j = 1, j <=1, j++){
+                cout << 1;  
+            return;
+                      }
+        if fr[cur_remainder !=0]{
+            for(int j = 1, j <=i - fr[cur_remainder], j++){
+                cout<<1;
+            }
+            for(int j = 1, j <=fr[cure_remainder], j++){
+                cout<<0;
+            }
+        }
+        }
 
+    }
+}
+```
 
