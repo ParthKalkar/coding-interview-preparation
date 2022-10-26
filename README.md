@@ -111,10 +111,13 @@ We know that `a**n` is `(a**(n/2)**2)` or `a*a**(n-1)` therefore we divide it an
 
 Problem - Given an integer n, find a number consisting only of digits 0 and 1 which is divisible by n 
 
+Time Complexity - O(n)
+
 Statement - if there are `n+1` pigeons and `n` holes then there is at least one hole with 2 pigeons
 
 In our problem, `n` is pigeons and `remainder` are holes
 
 ![pigeon_hole](pigeon_hole.png)
+
 
 
