@@ -93,3 +93,18 @@ func sieveofEratosthenes(int Limit):
                 isPrime[j] = False  
 ```
 Time Complexity - O(limit * log(limit))
+
+## Fast Modular exponentiation 
+
+Brute Force - O(n)
+```
+int ans = 1
+for(int i = 1, i<=n, i++):
+    ans = (1LL * ans * a)%MOD
+```
+
+Special approach - O(log(n))
+
+We know that `a**n` is `(a**(n/2)**2)` or `a*a**(n-1)` therefore we divide it and solve using divide and conquer method 
+
+
