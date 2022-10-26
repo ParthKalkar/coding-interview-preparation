@@ -8,7 +8,7 @@ Brute Force Approach: Time Complexity O(n)
 
 ```
 for i in range [2, (n-1)]:
-    if n % 2 == 0:
+    if n % i == 0:
     return false
 
 return true
@@ -26,7 +26,7 @@ Smart approach: Time Complexity O(sqrt(n))
 
 ```
 for i in range [2, sqrt(n)]:
-    if n % 2 == 0:
+    if n % i == 0:
     return false
 
 return true
@@ -73,4 +73,22 @@ function primeFact(n):
     len++
     f[len] = n
     
+```
+## Sieve of Eratosthenes
+It is an algorithm to find all prime numbers up to to the given number.
+
+The algorithm is as follows:
+1. It starts with an array considering all elements as prime - marking them `True`
+2. Starts with the number 2 and check if it is prime or not, if it is prime then all the multiples of that number are marked not prime or `False`
+
+Pseudo code: 
+```
+global: bool isPrime[Nmax];
+func sieveofEratosthenes(int Limit):
+    for(int i = 2, i <=limit, i++):
+        isPrime[i] = True
+    for(int i = 2, i <=limit/2, i++):
+        if(isPrime[i]):
+            for(j = i * 2, j <=limit, j += i):
+                isPrime[j] = False 
 ```
